@@ -26,6 +26,16 @@ From the analysis, I propose to increase SAT participation rates in West Virgini
 |act17_read|float|ACT|State average scores for ACT Reading in 2017| 
 |act17_science|float|ACT|State average scores for ACT Science in 2017| 
 |act17_final_score|float|ACT|State average composite scores for ACT in 2017|
+|sat18_participation|float|SAT|Percentage of SAT takers among high school students in 2018| 
+|sat18_read_write|int|SAT|State average scores for SAT Evidence-based Reading and Writing (ERW) in 2018| 
+|sat18_math|int|SAT|State average scores for SAT Math in 2018| 
+|sat18_final_score|int|SAT|State average total scores for SAT in 2018| 
+|act18_participation|float|ACT|Percentage of ACT takers among high school students in 2018| 
+|act18_english|float|ACT|State average scores for ACT English in 2018| 
+|act18_math|float|ACT|State average scores for ACT Math in 2018| 
+|act18_read|float|ACT|State average scores for ACT Reading in 2018| 
+|act18_science|float|ACT|State average scores for ACT Science in 2018| 
+|act18_final_score|float|ACT|State average composite scores for ACT in 2018|
 
 ### Conclusion and Recommendations
 #### Key Takeaways
