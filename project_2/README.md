@@ -2,19 +2,22 @@
 
 ## Problem Statement
 
-Which features of a property are important in predicting sale prices of houses in Ames, IA?
+The housing market plays an important role in the US economy. Falling house prices reduce consumers’ main wealth. This tends to cause lower spending and lower economic growth due to a negative wealth effect. Hence being able to accurately identify factors affecting housing prices and predict prices of housing prices based on a given set of attributes is important for many stakeholders for their financial considerations.
 
-Which features of a property contribute to higher prices or lower prices of houses in Ames, IA?
+Using our model, we aim to answer the following problems:
+* Which features of a property are important in predicting sale prices of houses in Ames, IA, and which contribute to higher prices or lower prices?
 
-What is the predicted sale price of a house in Ames, IA based on its features?
+* What is the predicted sale price of a house in Ames, IA based on its features?
 
-What can homeowners in Ames do to improve the saleprice of their homes?
+* What can homeowners in Ames do to improve the saleprice of their homes?
 
 ## Executive Summary
 
 In this project, we examine a housing dataset consisting of various attributes and features, along with its sale prices during 2006 to 2010 in Ames, IA. 
 
-We aim to understand which features of a property greatly affect sale prices of houses in Ames, IA using various regression models. After evaluating the models, we shortlist key features that are important in predicting housing sale prices in Ames, IA.
+We aim to understand which features of a property greatly affect sale prices of houses in Ames, IA using various regression models. After evaluating the performance our models, we optimize a model with best performance to accurately predict housing sale prices when given a set of features. 
+
+The model will be useful for many stakeholders including real estate agents, investors, house owners, and house buyers in a decision-making process by having a benchmark / certainty in prices. It helps them make a more informed decision when calculating the market value of their houses.
 
 ### Contents
 
@@ -66,8 +69,6 @@ We aim to understand which features of a property greatly affect sale prices of 
 
 7. Conclusions and Recommendations
 
-## Conclusions and Recommendations
-
 Our ElasticNet Model, scaled with StandardScaler performed best on predicting the sale prices of houses in Ames, IA. 
 
 
@@ -90,22 +91,21 @@ Our ElasticNet Model, scaled with StandardScaler performed best on predicting th
 * LotBsmtExposure: Walkout or garden level basement walls
 
 ### Features hurt the value of a home the most
-* Old age of house at sale 
-* Building Type: Townhouse End Unit
-
+* Buuilding Type: Townhouse End Unit
 
 ### Things that homeowners could improve in their homes to increase the value
-* Overall material and finish quality: repainting the house, replacing wallpapers, replacing carpet materials and other exterior improvements.
-* Kitchen quality: replacing old or retired appliances.
-* Overall Condition of house: keep cleanliness and tidiness, replacing retired interior or exterior.
-* Functionality: Keeping functionality of the house at basic level with no deductions, installing smart homes devices.
-* Fireplace: adding fireplaces
+* Overall quality and external quality: With a unit increase in overall quality (up to excellent), it increases the house value by \\$ 11800. 
+A unit increase in external quality (up to excellent) increase the house value by \\$ 6721. For example, we can repaint the house, replace wallpapers, replace carpet materials and other exterior improvements.
+* Kitchen quality: With a unit increase in kitchen quality (up to excellent), the price increases by \\$ 4470. We can consider replacing old or retired appliances should the cost not be more than the unit increase.
+* Overall Condition of house: With a unit increase in overall condition (up to excellent), it increases the house value by \\$4518. It is important to keep cleanliness and tidiness of the house, and consider whether to replace retired interior or exterior.
+* Functionality: With a unit increase in functionality / maintaining functionality typical, it increases the house value by \\$4216. Keeping functionality of the house at basic level with no deductions is important. We can also installing some affordable smart homes devices.
 
 
 ### Neighborhoods of good investment
 The neighborhood a house is situated at plays an important part on sale price. Neighborhoods that have a higher positive effect on pricing include Northridge Heights, Stone Brook, NorthRidge. Among all neighborhoods, Greenhill is the most expensive. In this case, investing in Northridge Heights, Stone Brook, and NorthRidge are a better option.
 
-### Recommendations
+### Recommendations & Further Research
 * Certain features in the dataset (square feet, quality) in Ames could be generalized to other cities in USA of similar GDP or markets. Features such as neighborhood specific to Ames would need to be removed to make the model more universal for other cities. Factors like fireplaces, heating would also be affected depending on the temperatures in the other USA cities. Supply and demand indices of housing in each city would be needed as well.
 * The dataset captures only houses sold during 2006 - 2010 in Ames. We may not be able to generalize the result for use in present day due to external factors such as inflation, economical outlook of the year, availability of mortgages, supply and demand of housing and more.
 * The dataset primarily captures house features and minamlly on nearby amenities (park, railroad). Other factors would include ease of access to supermarkets / hospital / schools / eateries, and distance from city centre. Factors like crime rates, fire-prone, flood potential, unforseen developments, traffic conditions are also important.
+* The dataset does not have a lot of samples with sale prices > $400,000. To predict the prices of higher-valued homes, more datasets are needed.
