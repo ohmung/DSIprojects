@@ -2,7 +2,7 @@
 
 ## Problem Statement
 
-The housing market plays an important role in the US economy. Falling house prices reduce consumers’ main wealth. This tends to cause lower spending and lower economic growth due to a negative wealth effect. Hence being able to accurately identify factors affecting housing prices and predict prices of housing prices based on a given set of attributes is important for many stakeholders for their financial considerations.
+The housing market plays an important role in the US economy. Being able to accurately identify factors affecting housing prices and predict prices of housing prices based on a given set of attributes is important for many stakeholders for their financial considerations.
 
 Using our model, we aim to answer the following problems:
 * Which features of a property are important in predicting sale prices of houses in Ames, IA, and which contribute to higher prices or lower prices?
@@ -10,6 +10,8 @@ Using our model, we aim to answer the following problems:
 * What is the predicted sale price of a house in Ames, IA based on its features?
 
 * What can homeowners in Ames do to improve the saleprice of their homes?
+
+* What should home buyers watch out for?
 
 ## Executive Summary
 
@@ -71,7 +73,6 @@ The model will be useful for many stakeholders including real estate agents, inv
 
 Our ElasticNet Model, scaled with StandardScaler performed best on predicting the sale prices of houses in Ames, IA. 
 
-
 ### Features that add the most value to a home
 * GrLivArea: Above grade (ground) living area square feet
 * OverallQual: Overall material and finish quality
@@ -90,19 +91,26 @@ Our ElasticNet Model, scaled with StandardScaler performed best on predicting th
 * GarageArea: Size of garage in square feet
 * LotBsmtExposure: Walkout or garden level basement walls
 
-### Features hurt the value of a home the most
+### Features that hurt the value of a home the most
 * Buuilding Type: Townhouse End Unit
 
-### Things that homeowners could improve in their homes to increase the value
+### Things that home owners could improve in their homes to increase the value
 * Overall quality and external quality: With a unit increase in overall quality (up to excellent), it increases the house value by \\$ 11800. 
 A unit increase in external quality (up to excellent) increase the house value by \\$ 6721. For example, we can repaint the house, replace wallpapers, replace carpet materials and other exterior improvements.
 * Kitchen quality: With a unit increase in kitchen quality (up to excellent), the price increases by \\$ 4470. We can consider replacing old or retired appliances should the cost not be more than the unit increase.
 * Overall Condition of house: With a unit increase in overall condition (up to excellent), it increases the house value by \\$4518. It is important to keep cleanliness and tidiness of the house, and consider whether to replace retired interior or exterior.
 * Functionality: With a unit increase in functionality / maintaining functionality typical, it increases the house value by \\$4216. Keeping functionality of the house at basic level with no deductions is important. We can also installing some affordable smart homes devices.
 
+### Things that house buyers should look out for when purchasing homes
+* Renovation prices involving overall quality and external quality: renovation cost of improving overall quality and external quality needs to be considered. Existing good overall quality contribute to house prices greatly, followed by existing good external quality. For example, if the cost to renovate it up to that quality is less, it may be worth renovating a house with lower quality. 
+* Year Built of house: Houses built earlier / that are older cost less.
+* Renovation prices involving kitchen quality: if there is an intent to improve the kitchen quality, we should consider the cost needed compared to getting another house of a higher kitchen quality.
+
+
 
 ### Neighborhoods of good investment
 The neighborhood a house is situated at plays an important part on sale price. Neighborhoods that have a higher positive effect on pricing include Northridge Heights, Stone Brook, NorthRidge. Among all neighborhoods, Greenhill is the most expensive. In this case, investing in Northridge Heights, Stone Brook, and NorthRidge are a better option.
+
 
 ### Recommendations & Further Research
 * Certain features in the dataset (square feet, quality) in Ames could be generalized to other cities in USA of similar GDP or markets. Features such as neighborhood specific to Ames would need to be removed to make the model more universal for other cities. Factors like fireplaces, heating would also be affected depending on the temperatures in the other USA cities. Supply and demand indices of housing in each city would be needed as well.
