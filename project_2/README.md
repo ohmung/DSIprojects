@@ -11,7 +11,7 @@ Using our model, we aim to answer the following problems:
 
 * What can homeowners in Ames do to improve the saleprice of their homes?
 
-* What should home buyers watch out for?
+* What features should home buyers focus on or disregard, considering their budget?
 
 ## Executive Summary
 
@@ -71,7 +71,7 @@ The model will be useful for many stakeholders including real estate agents, inv
 
 7. Conclusions and Recommendations
 
-Our ElasticNet Model, scaled with StandardScaler performed best on predicting the sale prices of houses in Ames, IA. 
+Our ElasticNet Model, scaled with StandardScaler performed best on predicting the sale prices of houses in Ames, IA. The model will be useful for many stakeholders including real estate agents, investors, house owners, and house buyers in a decision-making process by having a benchmark / certainty in prices. It helps them make a more informed decision when calculating the market value of the houses.
 
 ### Features that add the most value to a home
 * GrLivArea: Above grade (ground) living area square feet
