@@ -78,9 +78,8 @@ Misclassifications happened when words used were more generic in nature, such as
 ### Recommendations & Further Research
 * Removal of noise words such as 'amp'. Increasing n-grams to get more context on more generic terms across subreddits.
 
-* Explore other tools: Instead of classifying posts using frequency of words, we can consider using word similarities/analogies such as word2vec. We can also consider using stemming instead of lemmatizing for our words. 
- 
+* Explore other models and tools: Instead of classifying posts using frequency of words, we can consider using word similarities/analogies such as word2vec. We can also consider using stemming instead of lemmatizing for our words. We can also consider using other classifiers such as K-Nearest Neighbors classifier, Random Forests.
+
 * Increase our training dataset in size and of a longer timeline: Our dataset contains only a small section of the subreddit over a short period of time and may not cover a good spectrum of content. We can also consider incorporating the comments section into our data for a larger corpus. 
 
 * Explore relationships between content, number of comments, and upvote ratios.
-
