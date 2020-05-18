@@ -48,15 +48,22 @@ The data dictionary for the final dataset that was cleaned is shown below:
     * Split Dataset into Train, Validation and Test
     * Classification Models
         * Naive Bayes
+            * Count Vectorizer
+            * TFIDF Vectorizer
         * Logistic Regression
+            * Count Vectorizer
+            * TFIDF Vectorizer
     * Summary of Scores
 4. Model Evaluation on Test Data
 5. Conclusion and Recommendations
 
+## Conclusion and Recommendations
+
 ### Key Findings
 Our final classifier model, Multinomial Naive Bayes with TFIDF Vectorizer,  was able to predict 97.4% of the posts in the test data accurately. It has a precision of 97.8% and sensitivity of 96.7%. 
 
-Misclassifications happened when words used were more generic in nature, such as the word 'bank' which in r/povertyfinance may refer to bank recommendations and in r/investing may refer to performance of banking sector. 
+Misclassifications happened when words used were more generic in nature, such as the word 'bank' which in r/povertyfinance may refer to bank recommendations and in r/investing may refer to performance of banking sector or 'index' in r/povertyfinance was a different context when in r/investing. Another example is ‘nugget’ referring to a gold nugget investing term, 'wendy' as a company in terms of share for r/investing. 
+
 
 * Individuals can identify subreddits to explore based on the below:
     * Topics in r/povertyfinance center around **saving up and restricting spending for the financially challenged**. This includes money-saving tips / frugality (e.g. eggs as part of meals, groceries), basic needs (e.g. dental services), insurance advice, paying debts, and living paycheck to paycheck. 
@@ -69,10 +76,11 @@ Misclassifications happened when words used were more generic in nature, such as
 
 
 ### Recommendations & Further Research
+* Removal of noise words such as 'amp'. Increasing n-grams to get more context on more generic terms across subreddits.
+
 * Explore other tools: Instead of classifying posts using frequency of words, we can consider using word similarities/analogies such as word2vec. We can also consider using stemming instead of lemmatizing for our words. 
  
-* Increase our training dataset: Our dataset contains only a small section of the subreddit over a short period of time and may not cover a good spectrum of content. We can also consider incorporating the comments section into our data for a larger corpus. 
+* Increase our training dataset in size and of a longer timeline: Our dataset contains only a small section of the subreddit over a short period of time and may not cover a good spectrum of content. We can also consider incorporating the comments section into our data for a larger corpus. 
 
 * Explore relationships between content, number of comments, and upvote ratios.
-
 
