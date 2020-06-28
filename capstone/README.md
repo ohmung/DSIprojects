@@ -1,12 +1,10 @@
 # Customer Segmentation Analysis with Starbucks: One Size Does Not Fit All
----
+
 Qi-Wen Ng | General Assembly Singapore | DSI-14 | June 2020
 
 ## Introduction
----
-The ‘average customer’ is a concept of the past. Hitting the average does not mean hitting the majority, and this one-size-fits-all strategy does not work for businesses anymore.  Today, understanding our customers and personalization is key to establish stronger customer relationships and ultimately, sustain a profitable business. 
 
-Given a diverse set of customer attributes, how can we identify and create experiences for effective acquisition and retention? Enter "customer segmentation", where we break the customer base into groups that share similiarities such as demographics, psychographics, behavioural, geographic, etc.
+The ‘average customer’ is a concept of the past. Hitting the average does not mean hitting the majority, and this one-size-fits-all strategy does not work for businesses anymore.  Today, understanding our customers and personalization is key to establish stronger customer relationships and ultimately, sustain a profitable business. Given a diverse set of customer attributes, how can we identify and create experiences for effective acquisition and retention? Enter "customer segmentation", where we break the customer base into groups that share similiarities such as demographics, psychographics, behavioural, geographic, etc.
 
 Businesses need to be able to segment their customers for:
 - Marketing: 
@@ -26,7 +24,7 @@ Businesses need to be able to segment their customers for:
 
 
 ## Problem Statement
----
+
 As one of the most successful loyalty programs, 'Starbucks Rewards' has a staggering 16 million active members and represents a significant portion of the coffee chain’s growth. Starbucks attributes 40% of its total sales to the loyalty program and has seen same store sales rise by 7%. The Rewards Program is available on mobile devices as the 'Starbucks' App, which the company uses to market products, send out offers, collect payments, and earn stars (rewards) for freebies. 
 
 While mass marketing tactics are still able to get results, the assumption that simply all the members will be interested in what is being promoted is time-consuming, inefficient and expensive. 
@@ -43,7 +41,7 @@ In this context, the aim of this project is to:
 ---
 Our data set contains 17,000 anonymised customer demographics, 306,534 simulated data that mimics customer behavior and customer transactions, and 10 promotional offers or advertisement presented to customers on the Starbucks Rewards mobile app.
 
-Data usually does not usually come in a clean and ready-to-analyze format, and this was the case for my project. The real hard part was to transfer the data in its awkward form to a form I want it to. I had to establish a plan to extract and aggregate the data into a segmentable dataset. I used exploratory analysis to see what type of customers existed, and most importantly, their transaction / promotional engagement habits. Among the feature extraction / cleaning efforts, great challenges resulted from customers having repeat exposures to the same offer, identifying valid offer completions and views (in other words, identifying misattributions), and finally aggregating them into view and convertion rates for each offer type to each customer. I have also calculated recency, frequency and monetary (RFM) scores, which is a common method used for analyzing customer value. Ultimately, I created a customer-centric data, where each row represents a unique customer profile whose demographic attributes and spending behaviours are connected to each other. The data disctionary can be seen below.
+Data usually does not usually come in a clean and ready-to-analyze format, and this was the case for my project. The real hard part was to transfer the data in its awkward form to a form I want it to. I had to establish a plan to extract and aggregate the data from 3 different datasets into a segmentable dataset. I used exploratory analysis to see what type of customers existed, and most importantly, their transaction / promotional engagement habits. Among the feature extraction / cleaning efforts, great challenges resulted from customers having repeat exposures to the same offer, identifying valid offer completions and views (in other words, identifying misattributions), and finally aggregating them into view and convertion rates for each offer type to each customer. I have also calculated recency, frequency and monetary (RFM) scores, which is a common method used for analyzing customer value. Ultimately, I created a customer-centric data, where each row represents a unique customer profile whose demographic attributes and spending behaviours are connected to each other. The data disctionary can be seen below.
 
 Customers without complete profiles are also a customer. We had 12.8% of total customer profile that had missing demographics. Rather than imputing their data or removing them completely, I decided to separate their profile to evaluate. Then, I used K-Means clustering, an unsupervised machine learning model, to break up the customers into different segments based on how they would respond to promotions. To optimize the model, I used two evaluation metrics to search for the optimal number of clusters:
 - Silhouette coefficient (Intercluster distance)
@@ -102,7 +100,7 @@ Being aware of these findings and placing priority on important customers will e
 
 
 ## 4. Conclusion & Recommendations
----
+
 ### Key Findings & Recommendations
 - After identifying the valid completed offers, I realized that 25.67% of the rewards given were not actually completed due to offer influence, but completed as a result of the customer's normal behavior. Essentially, there would have been more revenue should these incorrectly given rewards were avoided.
 
