@@ -44,6 +44,18 @@ With this understanding of the impact of spraying, we looked at the weather data
 We also looked into the Cost Benefit analysis of spraying and Vector Control in general to help the CDPH make an informed decision on allocation of resources to combat this virus that has costs the US almost 778 million USD in healthcare and lost productivity costs.
 
 ## Capstone: Customer Segmentation Analysis with Starbucks: One Size Does Not Fit All
+As one of the most successful loyalty programs, 'Starbucks Rewards' has a staggering 16 million active members and represents a significant portion of the coffee chain’s growth. Starbucks attributes 40% of its total sales to the loyalty program and has seen same store sales rise by 7%. The Rewards Program is available on mobile devices as the 'Starbucks' App, which the company uses to market products, send out offers, collect payments, and earn stars (rewards) for freebies.
+
+While mass marketing tactics are still able to get results, the assumption that simply all the members will be interested in what is being promoted is time-consuming, inefficient and expensive.
+
+In this context, the aim of this project is to:
+
+Identify and perform customer segmentation based on their commonalities towards offers
+Understanding customer behaviour and providing specific business insights:
+What offers should be sent to each customer ?
+Which customers we should focus for retention / our most profitable customers?
+Which customers to nurture / focus for potential growth?
+
 Our data set contains 17,000 anonymised customer demographics, 306,534 simulated data that mimics customer behavior and customer transactions, and 10 promotional offers or advertisement presented to customers on the Starbucks Rewards mobile app.
 
 Data usually does not usually come in a clean and ready-to-analyze format, and this was the case for my project. The real hard part was to transfer the data in its awkward form to a form I want it to. I had to establish a plan to extract and aggregate the data from 3 different datasets into a segmentable dataset. I used exploratory analysis to see what type of customers existed, and most importantly, their transaction / promotional engagement habits. Among the feature extraction / cleaning efforts, great challenges resulted from customers having repeat exposures to the same offer, identifying valid offer completions and views (in other words, identifying misattributions), and finally aggregating them into view and convertion rates for each offer type to each customer. I have also calculated recency, frequency and monetary (RFM) scores, which is a common method used for analyzing customer value. Ultimately, I created a customer-centric data, where each row represents a unique customer profile whose demographic attributes and spending behaviours are connected to each other. The data disctionary can be seen below.
